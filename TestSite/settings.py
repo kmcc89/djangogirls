@@ -73,6 +73,7 @@ WSGI_APPLICATION = 'TestSite.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+# This is the default databse for Django projects
 
 DATABASES = {
     'default': {
@@ -117,6 +118,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
+# Path to find static files that will be used by the site/application 
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
