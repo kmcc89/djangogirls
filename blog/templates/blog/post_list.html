@@ -23,6 +23,15 @@
         <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta
             gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
     </div>
+
+    {% for post in posts %}
+        <div>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>Date published: {{ post.published_date }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
+            <br>
+        </div>
+    {% endfor %}    
 </body>
 
 </html>
